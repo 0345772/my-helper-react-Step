@@ -1,0 +1,55 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#root {
+  display: flex;
+  justify-content: center;
+}
+
+.App {
+  width: 800px;
+}
+
+.post {
+  display: flex;
+  padding: 15px;
+  border: 2px solid teal;
+  margin-top: 15px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.post-enter {
+  transform: translate(-450px);
+  -webkit-transform: translate(-450px);
+  -moz-transform: translate(-450px);
+  -ms-transform: translate(-450px);
+  -o-transform: translate(-450px);
+}
+.post-enter-active {
+  transform: translate(0);
+  transition: all 500ms ease-in;
+  -webkit-transform: translate(0);
+  -moz-transform: translate(0);
+  -ms-transform: translate(0);
+  -o-transform: translate(0);
+}
+.post-exit {
+ opacity: 1; 
+  
+}
+.post-exit-active {
+  transform: translate(-450px);
+  transition: all 500ms ease-in;
+  -webkit-transition: all 500ms ease-in;
+  -moz-transition: all 500ms ease-in;
+  -ms-transition: all 500ms ease-in;
+  -o-transition: all 500ms ease-in;
+  -webkit-transform: translate(-450px);
+  -moz-transform: translate(-450px);
+  -ms-transform: translate(-450px);
+  -o-transform: translate(-450px);
+}
